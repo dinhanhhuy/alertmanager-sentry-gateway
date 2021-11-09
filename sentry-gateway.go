@@ -244,6 +244,7 @@ func run(cmd *cobra.Command, args []string) error {
 		Handler: mux,
 	}
 
+	log.Info("[INFO]: VNG modify version")
 	log.Info("Starting to listen on: ", addr)
 
 	go func() {
